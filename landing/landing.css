@@ -668,7 +668,8 @@ ul { list-style:none; }
 .service-pill__text span { display:block; font-size:0.8rem; color: var(--slate); margin-top:3px; }
 
 /* ── TARJETAS DE SERVICIO Y PRECIO ─────────────────────── */
-.svc-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:26px; margin-top:38px; }
+.svc-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:26px; margin-top:38px; align-items:stretch; }
+@media (max-width:900px){ .svc-grid { grid-template-columns:1fr; } }
 .svc-card {
   display:flex; flex-direction:column;
   background: var(--panel);
